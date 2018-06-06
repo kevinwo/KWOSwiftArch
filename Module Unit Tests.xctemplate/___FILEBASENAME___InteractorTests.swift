@@ -9,11 +9,11 @@
 import XCTest
 @testable import ___PROJECTNAME___
 
-class ___VARIABLE_productName:identifier___PresenterTests: XCTestCase {
+class ___VARIABLE_productName:identifier___InteractorTests: XCTestCase {
 
+    var interactor: ___VARIABLE_productName:identifier___Interactor!
     var presenter: ___VARIABLE_productName:identifier___Presenter!
     var controller: ___VARIABLE_productName:identifier___ViewController!
-    var fakeInteractor: Fake___VARIABLE_productName:identifier___Interactor!
     var window: UIWindow!
 
     // MARK: - Test lifecycle
@@ -25,13 +25,12 @@ class ___VARIABLE_productName:identifier___PresenterTests: XCTestCase {
         let storyboard = UIStoryboard(name: "___VARIABLE_productName:identifier___", bundle: nil)
         controller = storyboard.instantiateInitialViewController() as! ___VARIABLE_productName:identifier___ViewController
         presenter = controller.presenter
-        fakeInteractor = Fake___VARIABLE_productName:identifier___Interactor(output: presenter)
-        presenter.interactor = fakeInteractor
+        interactor = presenter.interactor
         _ = controller.view
     }
 
     override func tearDown(){
-        fakeInteractor = nil
+        interactor = nil
         presenter = nil
         controller = nil
         window = nil

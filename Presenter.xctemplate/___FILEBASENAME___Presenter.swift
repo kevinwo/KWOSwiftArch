@@ -9,20 +9,26 @@
 import UIKit
 import KWOTools
 
-class ___FILEBASENAMEASIDENTIFIER___Presenter: Presenter {
+class ___VARIABLE_productName:identifier___Presenter: Presenter {
 
-    weak var view: ___FILEBASENAMEASIDENTIFIER___ViewController!
-    var viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel
-    var interactor: ___FILEBASENAMEASIDENTIFIER___Interactor
-    var router: ___FILEBASENAMEASIDENTIFIER___Router
+    weak var view: ___VARIABLE_productName:identifier___ViewController!
+    var viewModel: ___VARIABLE_productName:identifier___ViewModel
+    var interactor: ___VARIABLE_productName:identifier___Interactor!
+    var router: ___VARIABLE_productName:identifier___Router
 
-    init(view: ___FILEBASENAMEASIDENTIFIER___ViewController) {
+    init(view: ___VARIABLE_productName:identifier___ViewController) {
         self.view = view
+        super.init()
+        self.interactor = PurchaseInteractor(output: self)
     }
 
     // MARK: - Public interface
 
-    override viewDidLoad() {
+    override func viewDidLoad() {
         // Load cool stuff, generally with the interactor
+    }
+
+    func updateView() {
+        // Update the view
     }
 }

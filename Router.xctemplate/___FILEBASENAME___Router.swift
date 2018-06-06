@@ -9,18 +9,18 @@
 import UIKit
 import KWOTools
 
-class ___FILEBASENAMEASIDENTIFIER___Router: NSObject, Router {
+class ___VARIABLE_productName:identifier___Router: NSObject, Router {
 
-    typealias T = ___FILEBASENAMEASIDENTIFIER___ViewController
+    typealias T = ___VARIABLE_productName:identifier___ViewController
 
     static var storyboard: UIStoryboard {
         get {
-            return UIStoryboard(name: "___FILEBASENAMEASIDENTIFIER___", bundle: nil)
+            return UIStoryboard(name: "___VARIABLE_productName:identifier___", bundle: nil)
         }
     }
-    weak var view: ___FILEBASENAMEASIDENTIFIER___ViewController!
+    weak var view: ___VARIABLE_productName:identifier___ViewController!
 
-    required init(view: ___FILEBASENAMEASIDENTIFIER___ViewController) {
+    required init(view: ___VARIABLE_productName:identifier___ViewController) {
         self.view = view
     }
 }
