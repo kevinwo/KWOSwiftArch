@@ -13,13 +13,17 @@ class ___VARIABLE_productName:identifier___Presenter: Presenter {
 
     weak var view: ___VARIABLE_productName:identifier___ViewController!
     var viewModel: ___VARIABLE_productName:identifier___ViewModel
-    var interactor: ___VARIABLE_productName:identifier___Interactor!
     var router: ___VARIABLE_productName:identifier___Router
+    var interactor: ___VARIABLE_productName:identifier___Interactor!
 
     init(view: ___VARIABLE_productName:identifier___ViewController) {
         self.view = view
+        self.viewModel = ___VARIABLE_productName:identifier___ViewModel()
+        self.router = ___VARIABLE_productName:identifier___(view: view)
+
         super.init()
-        self.interactor = PurchaseInteractor(output: self)
+
+        self.interactor = ___VARIABLE_productName:identifier___Interactor(output: self)
     }
 
     // MARK: - Public interface

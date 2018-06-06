@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___Interactor {
+class ___VARIABLE_productName:identifier___Interactor {
 
-    var output: ___FILEBASENAMEASIDENTIFIER___Presenter!
+    var output: ___VARIABLE_productName:identifier___Presenter!
 
-    init(output: ___FILEBASENAMEASIDENTIFIER___Presenter) {
+    init(output: ___VARIABLE_productName:identifier___Presenter) {
         self.output = output
     }
 

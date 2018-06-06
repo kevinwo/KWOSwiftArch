@@ -13,7 +13,7 @@ class ___VARIABLE_productName:identifier___PresenterTests: XCTestCase {
 
     var presenter: ___VARIABLE_productName:identifier___Presenter!
     var controller: ___VARIABLE_productName:identifier___ViewController!
-    var fakeInteractor: ___VARIABLE_productName:identifier___Interactor!
+    var fakeInteractor: Fake___VARIABLE_productName:identifier___Interactor!
     var window: UIWindow!
 
     // MARK: - Test lifecycle

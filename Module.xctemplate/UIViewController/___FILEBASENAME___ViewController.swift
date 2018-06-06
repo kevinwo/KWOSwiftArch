@@ -8,19 +8,19 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
+class ___VARIABLE_productName:identifier___ViewController: UIViewController {
 
-    var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter! 
+    var presenter: ___VARIABLE_productName:identifier___Presenter! 
 
-    // MARK: Object lifecycle
+    // MARK: - Object lifecycle
 
     required init?(coder decoder: NSCoder) {
         super.init(coder: decoder)
 
-        self.presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(view: self)
+        self.presenter = ___VARIABLE_productName:identifier___Presenter(view: self)
     }
 
-    // MARK: View lifecycle
+    // MARK: - View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
